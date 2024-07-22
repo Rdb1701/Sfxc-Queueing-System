@@ -1,0 +1,22 @@
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .modal-content,
+    .modal-content * {
+        visibility: visible;
+    }
+
+    .modal-content {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 90mm; /* Adjust width as needed for the thermal printer */
+        font-size: 6px; /* Adjust font size as needed for readability */
+    }
+    button {
+        display: none;
+        /* Hide all buttons in print */
+    }
+}
